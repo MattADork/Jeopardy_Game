@@ -1,15 +1,10 @@
 require_relative 'board'
+require_relative 'questions_row_1'
+require_relative 'rules'
+require_relative 'question_picker'
+
 board = BOARD
+$cash_total = 0
 puts board
 
-
-
-board[528..531] = "    "
-board[545..548] = "    "
-board[562..565] = "    "
-board[579..582] = "    "
-board[596..599] = "    "
-board[613..616] = "    "
-
-
-puts board
+pick_question(board)

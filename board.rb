@@ -1,6 +1,6 @@
 BOARD = '
 |¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯|
-|   The Grammys  |  Cereal Macots |   Smells Good  |21st Century Lit|   90s Movies   |  WHAT "R" YOU  |
+|   The Grammys  | Cereal Mascots |   Smells Good  |21st Century Lit|   90s Movies   |  What "R" You  |
 |________________|________________|________________|________________|________________|________________|
 |                |                |                |                |                |                |
 |      $200      |      $200      |      $200      |      $200      |      $200      |      $200      |
@@ -23,6 +23,12 @@ BOARD = '
 |      (A5)      |      (B5)      |      (C5)      |      (D5)      |      (E5)      |      (F5)      |
 |________________|________________|________________|________________|________________|________________|
 '
+
+def board_score(board)
+  puts board
+  puts "                                      Your score: #{$cash_total} dollars"
+  return pick_question(board)
+end
 
 =begin
 $200a1 = board[424..427]
