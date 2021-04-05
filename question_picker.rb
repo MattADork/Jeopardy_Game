@@ -1,5 +1,47 @@
+def final_jeopardy
+  puts "Welcome to Final Jeopardy!"
+  puts "The category is: Baseball"
+  puts "How much would you like to wager?"
+  prompt
+  wager = gets.chomp.to_i
+  if wager > $cash_total
+    puts "You can't bet more than you have."
+    return final_jeopardy
+  elsif wager < 0
+    puts "You can't bet a negative number."
+    return final_jeopardy
+  end
+  $cash_total -= wager
+  puts "Who wears #27 on the Los Angeles Angels?"
+  prompt
+  guess = gets.chomp.downcase
+  if guess.include?("trout")
+    $cash_total += (wager * 2)
+    puts "You're correct!"
+    puts "Your final total is: "
+    print "#{$cash_total}".green
+    print " dollars!"
+    puts
+    puts "Thank you so much for playing!"
+    exit
+  else
+    puts "Sorry, that's incorrect. The correct answer was: "
+    print "Mike Trout".yellow
+    puts
+    print "Your final total is: "
+    print "#{$cash_total}".green
+    print " dollars!"
+    puts
+    puts "Thank you so much for playing!"
+    exit
+  end
+end
+
 def check_pick(str, board)
   str = str.upcase
+  if str == "FINAL"
+    final_jeopardy
+  end
   if str == "A1" and board[424] != " "
     check_qa1(board)
   elsif str == "B1" and board[441] != " "
@@ -24,6 +66,42 @@ def check_pick(str, board)
     check_qe2(board)
   elsif str == "F2" and board[925] != " "
     check_qf2(board)
+  elsif str == "A3" and board[1256] != " "
+    check_qa3(board)
+  elsif str == "B3" and board[1273] != " "
+    check_qb3(board)
+  elsif str == "C3" and board[1290] != " "
+    check_qc3(board)
+  elsif str == "D3" and board[1307] != " "
+    check_qd3(board)
+  elsif str == "E3" and board[1324] != " "
+    check_qe3(board)
+  elsif str == "F3" and board[1341] != " "
+    check_qf3(board)
+  elsif str == "A4" and board[1672] != " "
+    check_qa4(board)
+  elsif str == "B4" and board[1689] != " "
+    check_qb4(board)
+  elsif str == "C4" and board[1706] != " "
+    check_qc4(board)
+  elsif str == "D4" and board[1723] != " "
+    check_qd4(board)
+  elsif str == "E4" and board[1740] != " "
+    check_qe4(board)
+  elsif str == "F4" and board[1757] != " "
+    check_qf4(board)
+  elsif str == "A5" and board[2087] != " "
+    check_qa5(board)
+  elsif str == "B5" and board[2104] != " "
+    check_qb5(board)
+  elsif str == "C5" and board[2121] != " "
+    check_qc5(board)
+  elsif str == "D5" and board[2138] != " "
+    check_qd5(board)
+  elsif str == "E5" and board[2155] != " "
+    check_qe5(board)
+  elsif str == "F5" and board[2172] != " "
+    check_qf5(board)
   else
     puts "Sorry, invalid choice"
     return pick_question(board)

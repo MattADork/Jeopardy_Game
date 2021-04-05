@@ -34,6 +34,18 @@ def board_score(board)
 end
 
 =begin
+$600a3 = board[1256..1259]
+a3 = board[1360..1363]
+$600b3 = board[1273..1276]
+b3 = board[1377..1380]
+$600c3 = board[1290..1293]
+c3 = board[1394..1397]
+$600d4 = board[1307..1310]
+d4 = board[1411..1414]
+$600e5 = board[1324..1327]
+e5 = board[1428..1431]
+$600f6 = board[1341..1344]
+f6 = board[1445..1448]
 $400a2 = board[840..843]
 a2 = board[944..947]
 $400b2 = board[857..860]
