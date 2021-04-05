@@ -12,6 +12,7 @@ def check_qa2(board)
   end
   board[840..843] = "    "
   board[944..947] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -31,6 +32,7 @@ def check_qb2(board)
   end
   board[857..860] = "    "
   board[961..964] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -50,6 +52,7 @@ def check_qc2(board)
   end
   board[874..877] = "    "
   board[978..981] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -69,6 +72,7 @@ def check_qd2(board)
   end
   board[891..894] = "    "
   board[995..998] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -89,6 +93,7 @@ def check_qe2(board)
   daily_double_round_one(qe2, ae2, "list")
   board[908..911] = "    "
   board[1012..1015] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -108,6 +113,7 @@ def check_qf2(board)
   end
   board[925..928] = "    "
   board[1029..1032] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)

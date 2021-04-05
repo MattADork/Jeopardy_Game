@@ -1,14 +1,17 @@
 def final_jeopardy
   puts "Welcome to Final Jeopardy!"
   puts "The category is: Baseball"
-  puts "How much would you like to wager?"
+  puts "How much would you like to wager? (You can always wager up to $1000)"
   prompt
   wager = gets.chomp.to_i
-  if wager > $cash_total
-    puts "You can't bet more than you have."
+  if wager > 1000 and $cash_total <= 1000
+    puts "Sorry, you can only bet up to 1000 in this scenario"
     return final_jeopardy
-  elsif wager < 0
-    puts "You can't bet a negative number."
+  elsif wager > $cash_total and $cash_total > 1000
+    puts "Sorry, you can't bet more than you have."
+    return final_jeopardy
+  elsif wager <= 0
+    puts "You can't bet zero or a negative amount"
     return final_jeopardy
   end
   $cash_total -= wager

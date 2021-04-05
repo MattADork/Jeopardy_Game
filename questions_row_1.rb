@@ -12,6 +12,7 @@ def check_qa1(board)
   end
   board[424..427] = "    "
   board[528..531] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -31,6 +32,7 @@ def check_qb1(board)
   end
   board[441..444] = "    "
   board[545..548] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -50,6 +52,7 @@ def check_qc1(board)
   end
   board[458..461] = "    "
   board[562..565] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -69,6 +72,7 @@ def check_qd1(board)
   end
   board[475..478] = "    "
   board[579..582] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -88,6 +92,7 @@ def check_qe1(board)
   end
   board[492..495] = "    "
   board[596..599] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
@@ -107,6 +112,7 @@ def check_qf1(board)
   end
   board[509..512] = "    "
   board[613..616] = "    "
+  check_if_final(board)
   puts "Press [ENTER] to continue..."
   gets.chomp
   board_score(board)
