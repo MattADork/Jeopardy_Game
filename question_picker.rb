@@ -5,13 +5,13 @@ def check_pick(str, board)
   elsif str == "B1"
     check_qb1(board)
   elsif str == "C1"
-    check_qc1
-  elsif str == "D1"
-    check_qd1
+    check_qc1(board)
+  elsif str == "D1" and board[475] != " "
+    check_qd1(board)
   elsif str == "E1"
-    check_qe1
+    check_qe1(board)
   elsif str == "F1"
-    check_qf1
+    check_qf1(board)
   else
     puts "Sorry, invalid choice"
     return pick_question(board)

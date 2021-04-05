@@ -26,7 +26,10 @@ BOARD = '
 
 def board_score(board)
   puts board
-  puts "                                      Your score: #{$cash_total} dollars"
+  print "                                      Your score: "
+  print "#{$cash_total}".green 
+  print " dollars"
+  puts
   return pick_question(board)
 end
 

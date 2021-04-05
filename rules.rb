@@ -1,15 +1,21 @@
 def show_cash
-  puts "Your cash total is now #{$cash_total} dollars."
+  print "Your cash total is now"
+  print " #{$cash_total} ".green
+  print "dollars."
+  puts
 end
 
 def correct_answer(int)
-  puts "Correct!"
+  puts "Correct!".green
   $cash_total += int
   show_cash
 end
 
 def incorrect_answer(int, ans)
-  puts "Incorrect! The correct answer was #{ans}."
+  puts "Incorrect!".red
+  print "The correct answer was "
+  print "#{ans}.".yellow
+  puts
   $cash_total -= int
   show_cash
 end
