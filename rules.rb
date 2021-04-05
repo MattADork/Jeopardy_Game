@@ -6,14 +6,12 @@ def correct_answer(int)
   puts "Correct!"
   $cash_total += int
   show_cash
-  return "correct"
 end
 
-def incorrect_answer(int)
-  puts "Incorrect!"
+def incorrect_answer(int, ans)
+  puts "Incorrect! The correct answer was #{ans}."
   $cash_total -= int
   show_cash
-  return "incorrect"
 end
 
 def prompt
