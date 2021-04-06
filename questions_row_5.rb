@@ -1,11 +1,11 @@
 def check_qa5(board)
-  qa5 = ""
-  aa5 = ""
+  qa5 = "This duo has the only rescinded Grammy to date, they had to give back their 1990 Best New Artist award after it was discovered they don't actually sing vocals on their albums."
+  aa5 = "Milli Vanilli"
   format_question(qa5)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("milli vanilli")
     correct_answer(1000)
   else
     incorrect_answer(1000, aa5)
@@ -19,13 +19,13 @@ def check_qa5(board)
 end
 
 def check_qb5(board)
-  qb5 = ""
-  ab5 = ""
+  qb5 = "Count Chocula is the most famous mascot for the Monster Cereals, but this pink monster still made a name for himself with his strawberry flavored cereal with marshmallow bits."
+  ab5 = "Franken Berry"
   format_question(qb5)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("franken") and string.include?("berry")
     correct_answer(1000)
   else
     incorrect_answer(1000, ab5)
@@ -39,13 +39,13 @@ def check_qb5(board)
 end
 
 def check_qc5(board)
-  qc5 = ""
-  ac5 = ""
+  qc5 = "Getting its name from a combination of a beautiful flower and a bible figure, this plant has fragrant needle-like flowers, and is used in cooking recipes all over the world."
+  ac5 = "Rosemary"
   format_question(qc5)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("rosemary")
     correct_answer(1000)
   else
     incorrect_answer(1000, ac5)
@@ -59,13 +59,13 @@ def check_qc5(board)
 end
 
 def check_qd5(board)
-  qd5 = ""
-  ad5 = ""
+  qd5 = "Hilary Mantel's acclaimed trilogy about Thomas Cromwell came to an end in 2020. It began with this novel in 2009."
+  ad5 = "Wolf Hall"
   format_question(qd5)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("wolf hall")
     correct_answer(1000)
   else
     incorrect_answer(1000, ad5)
@@ -79,13 +79,13 @@ def check_qd5(board)
 end
 
 def check_qe5(board)
-  qe5 = ""
-  ae5 = ""
+  qe5 = "Al Pacino and Robert DeNiro shared the screen for the first time in this 1995 heist-thriller directed by Michael Mann."
+  ae5 = "Heat"
   format_question(qe5)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("heat")
     correct_answer(1000)
   else
     incorrect_answer(1000, ae5)
@@ -99,13 +99,13 @@ def check_qe5(board)
 end
 
 def check_qf5(board)
-  qf5 = ""
-  af5 = ""
+  qf5 = "What does the 'R' stand for in R&D?"
+  af5 = "Research"
   format_question(qf5)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("research")
     correct_answer(1000)
   else
     incorrect_answer(1000, af5)

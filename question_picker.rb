@@ -1,4 +1,5 @@
 def final_jeopardy
+  puts
   puts "Welcome to Final Jeopardy!"
   puts "The category is: Baseball"
   puts "How much would you like to wager? (You can always wager up to $1000)"
@@ -15,11 +16,12 @@ def final_jeopardy
     return final_jeopardy
   end
   $cash_total -= wager
-  puts "Who wears #27 on the Los Angeles Angels?"
+  puts "Considered by most to be the best player in the MLB right now, this Angels superstar has already taken home three MVP awards before the age of 30."
   prompt
   guess = gets.chomp.downcase
   if guess.include?("trout")
     $cash_total += (wager * 2)
+    puts
     puts "You're correct!"
     puts "Your final total is: "
     print "#{$cash_total}".green
@@ -28,6 +30,7 @@ def final_jeopardy
     puts "Thank you so much for playing!"
     exit
   else
+    puts
     puts "Sorry, that's incorrect. The correct answer was: "
     print "Mike Trout".yellow
     puts

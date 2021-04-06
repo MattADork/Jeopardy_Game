@@ -1,11 +1,11 @@
 def check_qa4(board)
-  qa4 = ""
-  aa4 = ""
+  qa4 = "This woman took home the Best Album Grammy for 'Tapestry' in 1972."
+  aa4 = "Carole King"
   format_question(qa4)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("king")
     correct_answer(800)
   else
     incorrect_answer(800, aa4)
@@ -19,13 +19,13 @@ def check_qa4(board)
 end
 
 def check_qb4(board)
-  qb4 = ""
-  ab4 = ""
+  qb4 = "This cereal, which resembles an iconic baked good, has gone through many mascots over the years, currently Chip the Wolf represents them."
+  ab4 = "Cookie Crisp"
   format_question(qb4)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("cookie crisp")
     correct_answer(800)
   else
     incorrect_answer(800, ab4)
@@ -39,13 +39,13 @@ def check_qb4(board)
 end
 
 def check_qc4(board)
-  qc4 = ""
-  ac4 = ""
+  qc4 = "A lot of people associated morning with the smell of this, arabica or robusta?"
+  ac4 = "Coffee"
   format_question(qc4)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("coffee")
     correct_answer(800)
   else
     incorrect_answer(800, ac4)
@@ -59,13 +59,13 @@ def check_qc4(board)
 end
 
 def check_qd4(board)
-  qd4 = ""
-  ad4 = ""
+  qd4 = "At the age of 30, this author has already made a name for herself with the titles 'Normal People' and 'Conversations with Friends'"
+  ad4 = "Sally Rooney"
   format_question(qd4)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("rooney")
     correct_answer(800)
   else
     incorrect_answer(800, ad4)
@@ -79,13 +79,13 @@ def check_qd4(board)
 end
 
 def check_qe4(board)
-  qe4 = ""
-  ae4 = ""
+  qe4 = "Brad Pitt really thought he wanted to know what was in the box in this 1995 crime movie, also starring Morgan Freeman."
+  ae4 = "Seven (or Se7en)"
   format_question(qe4)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("seven") or string.include?("se7en")
     correct_answer(800)
   else
     incorrect_answer(800, ae4)
@@ -99,13 +99,13 @@ def check_qe4(board)
 end
 
 def check_qf4(board)
-  qf4 = ""
-  af4 = ""
+  qf4 = "What does the 'R' in AARP stand for?"
+  af4 = "Retired"
   format_question(qf4)
   puts "What's your response?"
   prompt
   string = gets.chomp.downcase
-  if string.include?("")
+  if string.include?("retired")
     correct_answer(800)
   else
     incorrect_answer(800, af4)
